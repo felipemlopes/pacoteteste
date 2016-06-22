@@ -1,0 +1,31 @@
+{
+    "name": "felipe/assinaturas",
+    "description": "pacote de teste",
+    "authors": [
+        {
+            "name": "Felipe Lopes",
+            "email": "felipemarcanthlopes@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        //"illuminate/support": "5.0.*|5.1.*",//tem que ver se vai da certo aqui
+        "illuminate/support": "5.0.*|5.1.*|5.2.*",  //talvez assim resolva mas tem q testar
+        "prettus/moip-assinaturas-php":"dev-master",
+        "guzzlehttp/guzzle": "6.0.*"
+    },
+    "require-dev": { //tem que ver se isso pode no 5.2
+        "phpunit/phpunit": "~4.0",
+        "phpspec/phpspec": "~2.1"
+    },
+    "autoload": {
+        "classmap": [
+
+        ],
+        "psr-0": {
+            "Prettus\\MoipLaravel\\Subscription": "src/",
+            "Prettus\\MoipLaravel\\Subscription\\Test": "tests/"
+        }
+    }
+}
